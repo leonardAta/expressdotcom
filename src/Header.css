@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.header_message {
+  font-family: Helvetica;
+  font-size: 11px;
+  white-space: pre;
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.header_icons {
+  align-items: right;
+  width: 100%;
+  padding: 5px;
+}
