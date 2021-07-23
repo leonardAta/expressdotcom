@@ -13,10 +13,18 @@ const Header = () => {
         src='https://www.express.com/content/dam/logos-fonts/logos/express/express-logo.svg' 
         alt=''
       />      
-      <div className='header_icons'>
+      {/* <div className='header_icons'>
         <SearchIcon className='header_searchIcon' />
         <PersonIcon className='header_personIcon' />
         <LocalMallIcon className='header_localMallIcon' />
+      </div> */}
+      <div className='header_icons'>
+        <ul>
+          <li><SearchIcon className='header_searchIcon' /></li>
+          <li><PersonIcon className='header_personIcon' /></li>
+          <li><LocalMallIcon className='header_localMallIcon' /></li>
+        </ul>
+
       </div>
     </div>
   )
