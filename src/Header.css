@@ -32,7 +32,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
+  /* background-color: #24252a; */
 }
 
 li,
@@ -62,8 +62,13 @@ a {
 .header_icons li {
   display: inline-block;
   padding: 0px 20px;
+
 }
 
 .header_icons li a {
   transition: all 0.3s ease 0s;
+}
+
+.header_searchIcon, .header_personIcon, .header_localMallIcon {
+  color: black;
 }

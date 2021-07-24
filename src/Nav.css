@@ -15,7 +15,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
+  /* background-color: #24252a; */
 }
 
 .nav {
@@ -26,11 +26,11 @@
 
 }
 
-nav > a {
+.nav > a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #edf0f1;
+  color: #000000;
   text-decoration: none;
   transition: all 0.3s ease 0s ;
 

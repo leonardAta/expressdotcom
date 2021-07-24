@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
-import Nav from './Nav.js'
+import Nav from './Nav'
+import Home from './Home'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       {/* <h2>Welcome to Expressdotcom</h2> */}
       <Header />
       <Nav />
+      <Home />
     </div>
   );
 }
