@@ -22,38 +22,41 @@ const Home = () => {
           <Commodity 
             id='088340'
             title='Express X Fourlaps Logo Signature Tee'
-            price={48.00}
+            price={48.99}
             rating={5}
             image='https://images.express.com/is/image/expressfashion/0022_04771023_0086?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon'
           />
           <Commodity 
             id='077560'
             title='Express X Fourlaps Smash Tee'
-            price={54.00}
+            price={54.99}
             rating={5}
             image='https://images.express.com/is/image/expressfashion/0022_04771022_0904?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon'
           />
-          {/* <Commodity 
+          
+        </div>
+        <div className='home_row'>
+          <Commodity 
             id='055123'
             title='Express X Fourlaps Command Training Short'
-            price={68.00}
+            price={68.11}
             rating={5}
             image='https://images.express.com/is/image/expressfashion/0026_03532679_0086?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon'
           />
           <Commodity 
             id='044123'
             title='Express X Fourlaps Rush Hoodie'
-            price={98.00}
+            price={98.99}
             rating={5}
             image='https://images.express.com/is/image/expressfashion/0022_05321034_0086?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon'
           />
           <Commodity 
             id='033890'
             title='Express X Fourlaps Rush Jogger'
-            price={88.00}
+            price={88.99}
             rating={5}
             image='https://images.express.com/is/image/expressfashion/0025_03042680_0086?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon'
-          /> */}
+          />
         </div>
 
       </div>

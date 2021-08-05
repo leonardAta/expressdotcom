@@ -49,9 +49,14 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+  position: sticky;
+  top:0;
+  z-index: 100;
+  background-color: white;
 }
 
-.header_logo, .header_icons {
+.header_logo,
+.header_icons {
   cursor: pointer;
 }
 
@@ -62,13 +67,23 @@ a {
 .header_icons li {
   display: inline-block;
   padding: 0px 20px;
-
 }
 
 .header_icons li a {
   transition: all 0.3s ease 0s;
 }
 
-.header_searchIcon, .header_personIcon, .header_localMallIcon {
+.header_searchIcon,
+.header_personIcon,
+.header_localMallIcon {
   color: black;
+}
+
+@media only screen and (max-width: 530px) {
+  .header_logo {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

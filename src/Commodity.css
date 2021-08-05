@@ -36,6 +36,7 @@
   margin: 4px 2px;
   cursor: pointer;
   background-color: black;
+  width: 100%;
 }
 
 .commodity_price {
@@ -44,5 +45,16 @@
 
 .commodity_info {
   height: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .commodity {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .commodity > img {
+    width: 80%;
+  }
 }

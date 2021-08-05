@@ -1,0 +1,28 @@
+.bag {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content
+}
+
+.bag_banner {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.bag_image {
+  width: 50%;
+}
+
+.bag_title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+@media only screen and (max-width: 780px) {
+  .bag {
+  display: flex;
+  flex-direction: column;
+  }
+}
