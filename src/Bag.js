@@ -6,7 +6,7 @@ import ProductInBag from './ProductInBag'
 import Subtotal from './Subtotal'
 
 const Bag = () => {
-  const [{ cart, user }, dispatch] = useStateValue()
+  const [{ cart}, dispatch] = useStateValue()
   return (
     <div className='bag'>
       <div className='bag_leftSide'>
@@ -20,7 +20,7 @@ const Bag = () => {
           />
         </div> 
         <div>
-          <h4>Hello User</h4>
+          <h4>Hello user</h4>
           <h3 className='bag_title'>Shopping Bag</h3>
 
           {cart.map(item => (

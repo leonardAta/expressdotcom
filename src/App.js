@@ -23,7 +23,6 @@ function App() {
           </Route>
           <Route path='/'>
             <Header />
-            <Nav />
             <Home />
           </Route>
         </Switch>

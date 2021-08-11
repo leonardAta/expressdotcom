@@ -5,9 +5,16 @@ import PersonIcon from '@material-ui/icons/Person'
 import LocalMallIcon from '@material-ui/icons/LocalMall'
 import { Link } from 'react-router-dom'
 import { useStateValue } from './StateProvider'
+import { auth } from "./firebase";
 
 const Header = () => {
-  const [{ cart }, dispatch] = useStateValue()
+  const [{ cart, user }, dispatch] = useStateValue()
+
+  const handleAuthenticaton = () => {
+    if (user) {
+      auth.signOut();
+    }
+  }
 
 
   return (
@@ -28,26 +35,23 @@ const Header = () => {
       </div> */}
       <Link to='/bag'>
         <div className='header_icons'>
-          {/* <ul>
-            <li><SearchIcon className='header_searchIcon' /></li>
-            <li><PersonIcon className='header_personIcon' /></li>
-            <li><LocalMallIcon className='header_localMallIcon' /></li>
-          </ul> */}
           <LocalMallIcon className='header_localMallIcon' />
           <span className='header_localMallIcon'>{cart.length}</span>
         </div>
       </Link>
       
-      <Link to='/signin'>
+      
         <div className='header_icons'>
           <SearchIcon />
           <span className='header_searchIcon'></span>
         </div>
-      </Link>
+      
+      <Link to='/signin'>
       <div className='header_icons'>
-        <PersonIcon />
-        <span className='header_personIcon'>Sign In</span>
+        <PersonIcon className='header_personIcon' />
+        <span className='line1'>Sign In</span>
       </div>
+      </Link>
     </div>
   )
 }
