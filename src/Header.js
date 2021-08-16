@@ -39,17 +39,22 @@ const Header = () => {
           <span className='header_localMallIcon'>{cart.length}</span>
         </div>
       </Link>
-      
+
+        <Link to='/purchases'>
+          <div className='line1'>
+            <span>Purchases</span>
+          </div>
+        </Link>
       
         <div className='header_icons'>
           <SearchIcon />
-          <span className='header_searchIcon'></span>
+          <span className='line1'>Hi {user ? user.email : 'Guest'}</span>
         </div>
       
-      <Link to='/signin'>
-      <div className='header_icons'>
+      <Link to={!user &&  '/signin'}>
+      <div onClick={handleAuthenticaton } className='header_icons'>
         <PersonIcon className='header_personIcon' />
-        <span className='line1'>Sign In</span>
+        <span className='line1'>{user ? 'Sign Out' : 'Sign In' }</span>
       </div>
       </Link>
     </div>
